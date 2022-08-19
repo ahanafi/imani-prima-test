@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 840px;
+}
+
+.App-header {
+  margin-top: 50px;;
+  display: flex;
+  border-bottom: 3px solid #333;
+}
+
+h2 {
+  margin-bottom: .65rem;
+}
+
+#content {
+  margin-top: 30px;
+}
+
+form {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 1.5rem;
+  resize: none;
+}
+
+.btn-action {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+button {
+  padding:10px 12px;
+  font-size: 1rem;
+}
+
+#result-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top:30px;
+}
+
+#result {
+  background: #dedede;
+}
