@@ -1,0 +1,24 @@
+form.form-movie-finder {
+  display: flex;
+  flex-direction: row;
+}
+
+input[type='text'] {
+  padding:10px 12px;
+  font-size: 1rem;
+  flex: 4;
+}
+
+.form-movie-finder button {
+  margin-left: 10px;
+  padding:10px 12px;
+  flex: 1;
+}
+
+#result-container h3 {
+  font-size: 2rem;
+  text-align: center;
+  font-style: italic;
+  margin-top: 40px;
+  color: #808080;
+}

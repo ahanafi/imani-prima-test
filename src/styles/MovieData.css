@@ -1,0 +1,52 @@
+#movie-data {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  border-radius: 12px;
+  object-fit: contain;
+  object-position: center;
+  width: 180px;
+}
+
+#movie-details {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  text-align: left;
+}
+
+.movie-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 2px #ccc;
+}
+
+table {
+  margin-top:20px;
+}
+
+table tbody tr td:first-child {
+  width: 80px;
+  vertical-align: top;
+}
+
+table tbody tr td:nth-child(2) {
+  width: 20px;
+  vertical-align: top;
+}
+
+.action {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.action > div {
+  flex: 3;
+}
