@@ -1,9 +1,11 @@
-textarea {
+textarea, input {
   width: 100%;
-  border-radius: 10px;
   padding: 10px 12px;
   font-size: 1.5rem;
   resize: none;
+  background: #2a8fa9;
+  color: #eee;
+  box-shadow: 7px 6px 0 #efe292;
 }
 
 .btn-action {

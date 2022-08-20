@@ -5,8 +5,16 @@ form.form-movie-finder {
 
 input[type='text'] {
   padding:10px 12px;
-  font-size: 1rem;
+  font-size: 1.4rem;
   flex: 4;
+  color: #fff;
+}
+
+input[type='text']::placeholder {
+  color: rgb(173, 180, 184);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .form-movie-finder button {
@@ -19,6 +27,7 @@ input[type='text'] {
   font-size: 2rem;
   text-align: center;
   font-style: italic;
-  margin-top: 40px;
-  color: #808080;
+  margin-top: 6rem;
+  color: #e1ecea;
+  text-shadow:1px 1px 0 #eaec8c;
 }

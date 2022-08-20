@@ -1,5 +1,4 @@
 import React, { useRef } from 'react'
-import { Link } from 'react-router-dom'
 import '../styles/Home.css';
 
 const Home = () => {
@@ -8,6 +7,11 @@ const Home = () => {
 
   const countWords = () => {
     const text = inputText.current.value;
+    if (text === '') {
+      alert('Please insert text first!!!');
+      return;
+    }
+
     const arrText = text.toLowerCase().replaceAll('.', '').split(' ').sort();
     let results = [];
     arrText.forEach(word => {
@@ -31,25 +35,18 @@ const Home = () => {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h2>Word Counter</h2>
-        <h2><Link to='/movie'>Movie</Link></h2>
-      </header>
-
-      <div id='content'>
-        <form method='POST'>
-          <textarea ref={inputText} id='text' rows={6}></textarea>
-          <div className='btn-action'>
-            <button onClick={resetBox} type='button'>Reset</button>
-            <button onClick={countWords} type='button'>Count Words</button>
-          </div>
-        </form>
-
-        <div id='result-container'>
-          <h3>Result:</h3>
-          <textarea id='result' ref={resultText} rows={5} readOnly={true}></textarea>
+    <div id='content'>
+      <form method='POST'>
+        <textarea ref={inputText} id='text' rows={6}></textarea>
+        <div className='btn-action'>
+          <button onClick={resetBox} type='button'>Reset</button>
+          <button onClick={countWords} type='button'>Count Words</button>
         </div>
+      </form>
+
+      <div id='result-container'>
+        <h3>Result:</h3>
+        <textarea id='result' ref={resultText} rows={5} readOnly={true}></textarea>
       </div>
     </div>
   );
